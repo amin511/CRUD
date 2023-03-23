@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <!-- creat read update delete search  -->
+    <div class="container">
+        <div class="title">
+            <h1>CRUDS</h1>
+            <p>CREAT READ UPDATE DELETE SEARCH</p>
+        </div>
+        <section class="add-products">
+            <input type="text" name="phone" placeholder="Name of product" class="name">
+            <div class="phone-price">
+                <input type="number" class="price" placeholder="price">
+                <input type="number" class="taxes" placeholder="taxes">
+                <input type="number" class="ads" placeholder="ads">
+                <input type="number" class="discount" placeholder="discount">
+                <div class="total">Total</div>
+            </div>
+            <input type="text" class="category" placeholder="category">
+            <img src="" alt="" class="imgshow">
+            <button class="creat">Creat</button>
+
+            <!-- search    -->
+            <h1 class="titlesearch">SEARCHING</h1>
+            <input type="text" class="search-input" placeholder="search">
+            <div class="search-type">
+                <button class="search-title" id="title" onclick="searching(this.id)">Search By Title</button>
+                <button class="search-category" id="category" onclick="searching(this.id)"> search By category</button>
+            </div>
+            <!-- delete -->
+            <button class="delete-all"> delete all</button>
+        </section>
+        <section class="search">
+      
+            <table>
+                <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Title</td>
+                    <td>Price</td>
+                    <td>Ads</td>
+                    <td>Discount</td>
+                    <td>Total</td>
+                    <td>Category</td>
+                    <td>UPDATE</td>
+                    <td>DELETE</td>
+                </tr>
+                </thead>
+                <tbody class="head-table">
+
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    
+    <script src="crud.js"></script>
+</body>
+</html>

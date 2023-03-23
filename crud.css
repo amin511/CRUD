@@ -1,0 +1,95 @@
+html {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+* {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 80vw;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+input {
+    color: white;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border: 0;
+    border-radius: 20px;
+    background-color: rgba(48, 22, 194, 0.402);
+
+}
+
+input::placeholder {
+    color: white;
+    opacity: 70%;
+}
+
+.phone-price {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    border: 0;
+    border-radius: 50pc;
+    background-color: rgb(108, 0, 148);
+    width: 100%;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.search-type {
+    height: 50px;
+    justify-content: space-evenly;
+    display: flex;
+    gap: 20%;
+}
+
+.titlesearch {
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 20px;
+    background-color: rgba(59, 18, 97, 0.491);
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.total {
+    background-color: red;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+table {
+    border: 10px;
+    border-color: rebeccapurple;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+button:hover {
+    scale: 110%;
+    transition: 0.3s ease-in-out;
+}
